@@ -1,0 +1,12 @@
+var text = 'text' //string creating with quotes
+
+//method length 
+var str = 'method length';
+alert(str.length);
+
+//call charAt(position)
+var str = 'charAt';
+alert(str.charAt(4));
+
+var str = 'charAt';
+alert(str[4]);
