@@ -1,0 +1,30 @@
+//example of creating oject with few properties
+var person = {};
+person.name = 'Jon Snow';
+person.age = 25;
+alert(person.name + ': ' + person.age);
+
+//exmple delete properties
+delete person.age 
+
+//property check
+if('name' in person) {alert('True')}
+
+var person = {};
+person['name'] = 'Jon';
+alert('name' in person);
+
+//access property via variable
+var person = {};
+person.age = 25;
+var perAge = 'age';
+alert(person[perAge]);
+
+//literal object with properties 
+var person = {
+  name: 'Jon',
+  lname: 'Snow',
+  age: 25
+};
+alert(person.name + \b + person.lname + \b + person.age);
+
