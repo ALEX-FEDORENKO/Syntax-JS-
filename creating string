@@ -7,6 +7,45 @@ alert(str.length);
 //call charAt(position)
 var str = 'charAt';
 alert(str.charAt(4));
-
+/-or-/
 var str = 'charAt';
 alert(str[4]);
+
+//method indexOf('x', n)
+var str = 'indexOf';
+alert(str.indexOf('Of'));
+
+//method indexOf with bit operator '~' (~indexOf() читается как: Если надено)
+var str = 'test';
+if(~str.indexOf('te')) {
+    alert('OK!')
+  }
+
+//method indexOf in cycle 'while' exapmle
+var str = 'This is method indexOf';
+var target = 'method';
+
+var pos = 0;
+while (true) {
+	var fountPos = str.indexOf(target, pos)
+    if (fountPos == -1) break;
+    
+	alert ( fountPos );
+	
+    pos = pos + 1;
+}
+/-or-/
+
+//taking substrings: substring, substr, slice
+//substring(start [, end])
+var str = 'substring';
+alert(str.substring(2, 8));
+
+//substr
+var str = 'substr';
+alert(str.substr(1, 3));
+
+//slice(start [, end])
+var str = 'slice';
+alert(str.slice(1,4));
+
